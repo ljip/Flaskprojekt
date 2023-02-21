@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="/Assets/style.css" />
+    <title>Add Product</title>
+</head>
+
+<body>
+    <h2>Add new product</h2>
+    <form method="post" action="http://localhost:5000/addproduct">
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td><input type="text" name="price"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+    <div class="wrapper">
+        <div class="button">
+            <div class="icon">
+                <a href="{{url_for('listProduct')}}" class="icon">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+            </div>
+            <span>List of products</span>
+        </div>
+        <div class="button">
+            <div class="icon">
+                <a href="{{url_for('index')}}" class="icon">
+                    <i class="fa-thin fa-house"></i>
+                </a>
+            </div>
+            <span>Home</span>
+        </div>
+</body>
+
+</html>

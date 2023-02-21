@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <link rel="stylesheet" href="/Assets/style.css" />
+        <title>List of employees</title>
+    </head>
+
+    <body>
+        <h1>List of employees</h1>
+        <br>
+        <div class="wrapper">
+            <div class="button">
+                <div class="icon">
+                    <a href="{{url_for('addemployee')}}" class="icon">
+                        <i class="fa-sharp fa-solid fa-plus"></i>
+                    </a>
+                </div>
+                <span>Add new employee</span>
+            </div>
+            <div class="button">
+                <div class="icon">
+                    <a href="{{url_for('index')}}" class="icon">
+                        <i class="fa-sharp fa-solid fa-house"></i>
+                    </a>
+                </div>
+                <span>Home</span>
+            </div>
+        </div>
+        <br>
+        <h3>List of employee's</h3>
+        <div id="Container">
+            {%for employee in employees%}
+            <p>
+                id : {{employee.EmployeeID}}
+                <br/> Name : {{employee.Name}}
+                <br/> Address : {{employee.Address}}
+            </p>
+            <br/> {%endfor%}
+        </div>
+    </body>
+
+    </html>

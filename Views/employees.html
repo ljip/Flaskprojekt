@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="/Assets/style.css" />
+    <title>Team</title>
+</head>
+
+<body>
+    <h1>Meet our <strong>Foodly</strong> Team</h1>
+    <table cellspacing="100">
+        <th>
+            <img src="/Assets/images/employees/Deck McCaighey.png" alt="" height="150" weight="150">
+            <p>Deck McCaighey</p>
+        </th>
+        <th><img src="/Assets/images/employees/Jenny Kebbell.png" alt="" height="150" weight="150">
+            <p>Jenny Kebbell</p>
+        </th>
+        <th><img src="/Assets/images/employees/Gerhard Lacey.png" alt="" height="150" weight="150">
+            <p>Gerhard Lacey</p>
+        </th>
+    </table>
+    <br>
+    <div class="wrapper">
+        <div class="button">
+            <div class="icon">
+                <a href="{{url_for('addemployee')}}" class="icon">
+                    <i class="fa-sharp fa-thin fa-house"></i>
+                </a>
+            </div>
+            <span>Add employee</span>
+        </div>
+        <div class="button">
+            <div class="icon">
+                <a href="{{url_for('listemployees')}}" class="icon">
+                    <i class="fa-sharp fa-thin fa-house"></i>
+                </a>
+            </div>
+            <span>List of employees</span>
+        </div>
+        <div class="button">
+            <div class="icon">
+                <a href="{{url_for('index')}}" class="icon">
+                    <i class="fa-sharp fa-thin fa-house"></i>
+                </a>
+            </div>
+            <span>Home</span>
+        </div>
+    </div>
+    
+</body>
+
+</html>

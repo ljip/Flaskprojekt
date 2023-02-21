@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <link rel="stylesheet" href="/Assets/style.css" />
+        <title>List of products</title>
+    </head>
+
+    <body>
+        <table cellspacing="20">
+            <tr>
+                <td>ID</td>
+                <td>NAME</td>
+                <td>PRICE</td>
+            </tr>
+            <br>
+            {%for product in products%}
+            <tr>
+                <td>{{product.ProductID}}</td>
+                <td>{{product.Name}}</td>
+                <td>{{product.Price}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <br>
+        <div class="wrapper">
+            <div class="button">
+                <div class="icon">
+                    <a href="{{url_for('addproduct')}}" class="icon">
+                        <i class="fa-sharp fa-solid fa-plus"></i>
+                    </a>
+                </div>
+                <span>Add new products</span>
+            </div>
+            <div class="button">
+                <div class="icon">
+                    <a href="{{url_for('index')}}" class="icon">
+                        <i class="fa-sharp fa-solid fa-house"></i>
+                    </a>
+                </div>
+                <span>Home</span>
+            </div>
+        </div>
+    </body>
+
+    </html>

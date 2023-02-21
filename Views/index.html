@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="/Assets/style.css" />
+    <title>Store management</title>
+</head>
+<table cellspacing="20">
+    <td>
+        <a href="{{url_for('login')}}">Login</a>
+    </td>
+    <td>
+        <a href="{{url_for('register')}}">Register</a>
+    </td>
+</table>
+
+
+<body>
+    <table cellspacing="30">
+        <td>
+            <tr>
+                <td>
+                    <img src="/Assets/images/logo/ducan.png" alt="logo" width="100" height="100">
+                </td>
+                <td>
+                    <h1>Foodly</h1>
+                    <h3>healhy food's</h3>
+                    <p><em> Gradišćanska ul. 24 </em></p>
+                </td>
+            </tr>
+        </td>
+    </table>
+    <hr size="2">
+    <div class="wrapper">
+        <div class="button">
+            <div class="icon">
+                <a href="{{url_for('contact')}}" class="icon">
+                    <i class="fab fa-rocketchat"></i>
+                </a>
+            </div>
+            <span>Contact</span>
+        </div>
+        <div class="button">
+            <div class="icon">
+                <a href="{{url_for('products')}}" class="icon">
+                    <i class="fa-solid fa-store"></i>
+                </a>
+            </div>
+            <span>Products</span>
+        </div>
+        <div class="button">
+            <div class="icon">
+                <a href="{{url_for('employees')}}" class="icon">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+            </div>
+            <span>Employees</span>
+        </div>
+    </div>
+</body>
+
+</html>
